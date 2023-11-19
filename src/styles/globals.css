@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-montserrat: Arial, sans-serif;
+    
+}
+
+
+
+.top-menu {
+    @apply bg-gray-900 text-white p-7 text-center
+    ;
+}
+
+.background-image {
+    @apply w-full h-screen bg-cover bg-center flex flex-col justify-center items-center text-white relative;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 100%;
+  background-color: #ffffff; 
+  color: #0F2851; 
+  padding-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Coloca os itens um abaixo do outro */
+}
+
+.side-menu a {
+  color: #0F2851; /* Cinza escuro para links */
+  text-decoration: none;
+  display: block;
+  padding: 50px 0;
+}
+
+.square {
+  flex-basis: 20%; /* Divide o side-menu em cinco quadrados iguais */
+  background-color: #ffff; /* Cor de fundo para os quadrados */
+  height: 20%; /* Altura de cada quadrado */
+}
+
+
+
+.text-container {
+    @apply text-left mt-32;
+}
+
+.main-text {
+    @apply text-4xl mb-8;
+}
+
+.simule-button {
+    @apply bg-yellow-300 text-gray-900 px-10 py-5 text-xl no-underline rounded-xl font-bold ;
+    
+}
+
+
+
+.custom-text-shadow {
+  text-shadow: 2px 2px 4px rgba(77, 74, 74, 0.5); /* Ajuste conforme necessário */
+}
