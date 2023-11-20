@@ -87,50 +87,161 @@ export default function Home() {
   </div>
   
   
-</div>
-<div className="w-full bg-gray-900 p-10 text-white mt-40  ">
-<div className="flex flex-wrap">
+<div className="w-full bg-gray-900 p-10 text-white mt-40">
+  <div className="flex flex-wrap">
     {/* Conteúdo do retângulo azul */}
     <div className="text-left mt-8 ml-40">
-    <h2 className="text-white text-5xl font-bold  mb-2 custom-text-shadow tracking-tigh">Todos os Seguros </h2>
-    <h2 className="text-white text-5xl font-bold  mb-2 custom-text-shadow tracking-tigh">que oferecemos</h2>
-    <h2 className="text-yellow-300 text-5xl font-bold  mb-4 custom-text-shadow tracking-tigh">para você</h2>
+      <h2 className="text-white text-5xl font-bold mb-2 custom-text-shadow tracking-tigh">Todos os Seguros </h2>
+      <h2 className="text-white text-5xl font-bold mb-2 custom-text-shadow tracking-tigh">que oferecemos</h2>
+      <h2 className="text-yellow-300 text-5xl font-bold mb-4 custom-text-shadow tracking-tigh">para você</h2>
 
- {/* Botão arredondado amarelo "Simule Online" */}
- <button className="bg-yellow-300 rounded-full px-6 py-3 mt-4 text-gray-900 font-bold">
- Simule Online
-  </button>
+      {/* Botão arredondado amarelo "Simule Online" */}
+      <button className="bg-yellow-300 rounded-full px-6 py-3 mt-4 text-gray-900 font-bold">
+        Simule Online
+      </button>
+    </div>
+
 
     {/* Mosaico de imagens na parte direita */}
-    <div className="w-1/2 grid grid-cols-2 gap-4">
+    <div className="w-1/2 grid grid-cols-3 gap-4 ml-20">
+
       {/* Imagem 1 */}
-      <img src="/assets/odontologico.jpg" alt="Imagem 1" className="w-full h-auto" />
+      <div className="relative col-span-2">
+    <img src="/assets/viagem.jpg" alt="Imagem 1" className="w-full h-64 object-cover filter brightness-75" />
+    <div className="absolute inset-0 flex items-left justify-right p-8 text-2xl text-white text-center font-bold custom-text-shadow mt-40">
+      <p>Seguro Viagem</p>
+    </div>
+  </div>
+       
 
       {/* Imagem 2 */}
-      <img src="/assets/financeiro.jpg" alt="Imagem 2" className="w-full h-auto" />
+      <div className="relative text-left">
+    <img src="/assets/financeiro.jpg" alt="Imagem 2" className="w-full h-64 object-cover filter brightness-75" />
+    <div className="absolute inset-0 flex items-center justify-right p-8 text-2xl text-white text-left font-bold custom-text-shadow mt-40">
+      <p>Consórcio e Financiamento</p>
+    </div>
+    
+  </div>
 
       {/* Imagem 3 */}
-      <img src="/assets/viagem.jpg" alt="Imagem 3" className="w-full h-auto" />
-
-      {/* Imagem 4 */}
-      <img src="/assets/residencial.jpg" alt="Imagem 4" className="w-full h-auto" />
-
-      {/* Imagem 5 */}
-      <img src="/assets/portateis.jpg" alt="Imagem 5" className="w-full h-auto" />
+      <div className="relative text-left">
+    <img src="/assets/odontologico.jpg" alt="Imagem 3" className="w-full h-60 object-cover filter brightness-75" />
+    <div className="absolute inset-0 flex items-center justify-right p-8 text-2xl text-white text-left font-bold custom-text-shadow mt-40">
+      <p>Plano Odontológico</p>
     </div>
   </div>
 
+      {/* Imagem 4 */}
+      <div className="relative">
+    <img src="/assets/residencial.jpg" alt="Imagem 4" className="w-full h-60 object-cover filter brightness-75" />
+    <div className="absolute inset-0 flex items-center justify-right p-8 text-2xl text-white text-left font-bold custom-text-shadow mt-40">
+      <p>Plano Residencial</p>
+    </div>
+  </div>
+
+      {/* Imagem 5 */}
+      <div className="relative">
+    <img src="/assets/portateis.jpg" alt="Imagem 5" className="w-full h-60 object-cover filter brightness-75" />
+    <div className="absolute inset-0 flex items-center justify-right p-8 text-2xl text-white text-left font-bold custom-text-shadow mt-40">
+      <p>Equipamentos Portáteis</p>
+    </div>
+  </div>
+    </div>
+  </div>
+  </div>
+
+  
+
   </div>
 
 
 
+<div className="w-full bg-gray-900 p-10 text-white mt-40">
+  <div className="flex flex-wrap items-center">
+    {/* Conteúdo do retângulo azul */}
+    <div className="text-left mt-8 ml-40">
+      <h2 className="text-white text-5xl font-bold mb-2 custom-text-shadow tracking-tigh">Conheça nossos</h2>
+      <h2 className="text-white text-5xl font-bold mb-2 custom-text-shadow tracking-tigh">serviços</h2>
+      <h2 className="text-white text-5xl font-bold mb-2 custom-text-shadow tracking-tigh">corporativos!</h2>
+    </div>
+    <p className="text-white text-lg ml-20 mt-10">
+    Descubra como podemos proteger o seu negócio com serviços corporativos
+    <br />
+     para garantir a tranquilidade de serviços corporativos para  garantir  a 
+    <br />
+  tranquilidade de sua empresa.
+  </p>  
   </div>
 
 
+</div>
+
+  {/* Quatro imagens abaixo do contêiner azul */}
+<div className="flex justify-centergrid gap-8 ml-60 ">
+  {/* Imagem 1 */}
+  <div className="relative">
+    <img src="/assets/seguroSaude.jpg" alt="Imagem 1" className="w-64 h-64 object-cover rounded-lg filter brightness-75" />
+    <p className="absolute bottom-20 left-3 text-white text-left font-bold text-3xl p-2">Seguro Saúde</p>
+  </div>
+
+  {/* Imagem 2 */}
+  <div className="relative">
+    <img src="/assets/Segurovida.jpg" alt="Imagem 2" className="w-64 h-64 object-cover rounded-lg filter brightness-75" />
+    <p className="absolute bottom-20 left-3 text-white text-left font-bold text-3xl p-2">Seguro de Vida</p>
+  </div>
+
+  {/* Imagem 3 */}
+  <div className="relative">
+    <img src="/assets/seguroEmpresa.jpg" alt="Imagem 3" className="w-64 h-64 object-cover rounded-lg filter brightness-75" />
+    <p className="absolute bottom-11 left-3 text-white text-left font-bold text-3xl p-2">Seguro para Empresas</p>
+  </div>
+
+  {/* Imagem 4 */}
+  <div className="relative">
+    <img src="/assets/Responsabilidade.jpg" alt="Imagem 4" className="w-64 h-64 object-cover rounded-lg filter brightness-75" />
+    <p className="absolute bottom-2 left-3 text-white text-left font-bold text-3xl p-2">Seguro Responsabilidade Civil</p>
+  </div>
+</div>
 
 
 
+  {/* Espaço em branco */}
+  <div className="my-60"></div>
 
+
+  <div className="flex flex-wrap mt-40">
+  {/* Imagem à esquerda */}
+  <img src="/assets/Quemsomos.jpg" alt="Imagem" className="w-1/3 h-auto object-cover ml-60" />
+
+  {/* Conteúdo à direita */}
+  <div className="w-1/2 p-10">
+    {/* Título "Por que fazer seu seguro na Acelerados?" */}
+    <h2 className="text-5xl text-gray-900 font-extrabold mb-1 text-right">
+      Por que fazer
+    </h2>
+    <h2 className="text-5xl text-gray-900 font-extrabold mb-1 text-right">
+      seguro na
+    </h2>
+    <h2 className="text-5xl text-yellow-300 font-extrabold mb-6 text-right">
+     Acelerados?
+    </h2>
+
+    {/* Texto */}
+    <div className="text-lg text-gray-900 text-right font-semibold">
+      <p className="mb-1">Fazer seu seguro na Acelerados é a escolha inteligente para</p>
+      <p className="mb-1">proteger o que realmente importa. Oferecemos soluções confiáveis,</p>
+      <p className="mb-1">atendimento personalizado e preços competitivos. Sua segurança está</p>
+      <p className="mb-1">em boas mãos conosco. Temos o compromisso de atender nossos</p>
+      <p className="mb-1">clientes de forma ágil e humanizada. Assim, conquistamos</p>
+      <p className="mb-1">a cada dia a confiança e preferência das pessoas.</p>
+    </div>
+
+    {/* Botão "Simule Online" */}
+    <button className="bg-yellow-300 rounded-full px-6 py-3 mt-4 text-gray-900 font-bold ">
+      Simule Online
+    </button>
+  </div>
+</div>
 
 
 
