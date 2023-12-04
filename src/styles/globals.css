@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+
+html { 
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
@@ -17,8 +18,12 @@ html {
 
 
 .top-menu {
-    @apply bg-gray-900 text-white p-7 text-center
+    @apply bg-indigo-950 text-white p-7 text-center
     ;
+}
+
+.top-menu a:hover {
+  color: #8f9cb3; /* Cor do texto ao passar o mouse, ajuste conforme necessário */
 }
 
 .background-image {
@@ -46,13 +51,25 @@ html {
   padding: 50px 0;
 }
 
+
 .square {
   flex-basis: 20%; /* Divide o side-menu em cinco quadrados iguais */
   background-color: #ffff; /* Cor de fundo para os quadrados */
   height: 20%; /* Altura de cada quadrado */
 }
 
-
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding-top: 128px;
+  background: #f6f6f6;
+  display: block;
+  width: 10%;
+  height: 100%;
+  border-right: 1px solid #d4d4d4;
+}
 
 .text-container {
     @apply text-left mt-32;
@@ -67,8 +84,119 @@ html {
     
 }
 
+.simule-button a:hover {
+  color: #476492; /* Cor do texto ao passar o mouse, ajuste conforme necessário */
+}
 
-
+.icon {
+  font-size: 1.5rem; /* ou ajuste conforme necessário */
+  margin-right: 0.5rem;
+}
 .custom-text-shadow {
   text-shadow: 2px 2px 4px rgba(77, 74, 74, 0.5); /* Ajuste conforme necessário */
 }
+
+.chatbot-iframe {
+  display: block;
+  width: 385px;
+  height: 115px;
+  border: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9000 !important;
+}
+
+.sidebar {
+  text-align: center;  
+}
+
+.logo-container {
+  padding: 20px;
+  background-color: #ffffff; /* Cor de fundo da área do logo */
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.side-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu {
+  margin-bottom: 0px; 
+}
+
+.side-menu a {
+  border: 1px solid #e0e0e0; 
+  margin-bottom: 0px; /* Adicione espaço entre os blocos */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #0F2851; /* Cor do texto */
+}
+
+.side-menu a span {
+  margin-top: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+.side-menu a:hover {
+  color: #92a9cf; /* Cor do texto ao passar o mouse, ajuste conforme necessário */
+}
+
+/* Estilos para ícones */
+.side-menu a svg {
+  font-size: 28px; /* Tamanho do ícone, ajuste conforme necessário */
+}
+
+
+.calculadora svg {
+  color: #0F2851; /* Cor específica para o ícone da calculadora */
+}
+
+.ligamos svg {
+  color: #0F2851; /* Cor específica para o ícone de ligamos */
+}
+
+.whatsapp svg {
+  color: #0F2851; /* Cor específica para o ícone do WhatsApp */
+}
+
+.ajuda svg {
+  color: #0F2851; /* Cor específica para o ícone de ajuda */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  
+  nav.md\\:hidden .flex {
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  nav.md\\:hidden a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #007bff; /* Substitua pela cor correta de text-indigo-950 */
+    text-decoration: none;
+  }
+  
+  nav.md\\:hidden a span {
+    margin-top: 8px;
+  }
+  
+  
+  }
